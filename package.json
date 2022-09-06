@@ -10,24 +10,15 @@
   },
   "dependencies": {
     "@react-navigation/native": "^6.0.12",
-<<<<<<< HEAD
-    "@react-navigation/native-stack": "^6.8.0",
-=======
->>>>>>> a6d3d51c46b3cda6c94cdfa6ac7a509ef2dd16bd
     "expo": "~46.0.9",
     "expo-splash-screen": "~0.16.2",
     "expo-status-bar": "~1.4.0",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-native": "0.69.5",
-<<<<<<< HEAD
-    "react-native-safe-area-context": "^4.3.3",
-    "react-native-screens": "^3.17.0",
-=======
     "react-native-safe-area-context": "4.3.1",
     "react-native-screens": "~3.15.0",
     "react-native-status-bar-height": "^2.6.0",
->>>>>>> a6d3d51c46b3cda6c94cdfa6ac7a509ef2dd16bd
     "react-native-web": "~0.18.7"
   },
   "devDependencies": {
