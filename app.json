@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "bar-system",
+    "slug": "bar-system",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
