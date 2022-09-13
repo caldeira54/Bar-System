@@ -23,6 +23,5 @@ const styles = StyleSheet.create({
         borderColor: colors('verdeescuro'),
         color:  colors('branco'),
         fontSize: 16,
-        np
     }
 });
