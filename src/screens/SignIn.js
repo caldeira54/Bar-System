@@ -14,13 +14,16 @@ export default function SignIn() {
 
  return (
     <View style={styles.container}>
-      <Image
-        source={require('../assets/img/login.png')}
-        resizeMode='contain'
-        style={{ width: '75%'}}
-      />
+      
 
       <View style={styles.form}>
+        <Image
+          source={require('../assets/img/sinuca.png')}
+          resizeMode='contain'
+          style={{ width: '75%', height: '30%', marginLeft: '13%' }}
+          
+        />
+        
         <Text style={styles.label}>Usuario:</Text>
 
         <TextInput
@@ -56,7 +59,7 @@ export default function SignIn() {
       marginBottom: 8
     },
     button: {
-      backgroundColor: "#FFF",
+      backgroundColor: colors('verdeescuro'),
       padding: 4,
       height: 40,
       width: '100%',
@@ -68,7 +71,8 @@ export default function SignIn() {
       fontSize: 16,
       padding: 4,
       textTransform: 'uppercase',
-      textAlign: 'center'
+      textAlign: 'center',
+      color: colors('branco')
     },
     form: {
       width: '75%',
