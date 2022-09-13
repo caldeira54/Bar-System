@@ -22,6 +22,6 @@ const styles = StyleSheet.create({
         borderBottomWidth: 1,
         borderColor: colors('verdeescuro'),
         color:  colors('branco'),
-        fontSize: 16,
+        fontSize: 16
     }
 });
