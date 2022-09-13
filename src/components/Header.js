@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigation } from '@react-navigation/native';
 import { View, Text, StyleSheet } from 'react-native';
 import colors from '../global/colors';
 import { ArrowFatLinesRight, ArrowLeft } from 'phosphor-react-native';

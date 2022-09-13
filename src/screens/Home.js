@@ -6,7 +6,7 @@ import colors from '../global/colors';
 export default function Home() {
   return (
     <View style={styles.container}>
-      <Header title="Home" />
+      <Header title="home" />
     </View>
   );
 }
