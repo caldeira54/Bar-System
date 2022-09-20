@@ -11,14 +11,14 @@ export default function Input({ placeholder, security = false, keyboardType, aut
         <KeyboardAvoidingView behavior={Platform.OS === "ios" ? "padding" : "height"}>
             <View style={styles.inputArea}>
                 {icon === 'user' && (
-                    <User color={colors('white')} size={20} />
+                    <User color={colors('branco')} size={20} />
                 )}
                 {icon === 'pass' && (
-                    <Key color={colors('white')} size={20} />
+                    <Key color={colors('branco')} size={20} />
                 )}
                 <TextInput
                     placeholder={placeholder}
-                    placeholderTextColor={colors("grey")}
+                    placeholderTextColor={colors("cinzaclaro")}
                     secureTextEntry={hidePass}
                     keyboardType={keyboardType}
                     autoCorrect={autoCorrect}
@@ -28,9 +28,9 @@ export default function Input({ placeholder, security = false, keyboardType, aut
                 {security && (
                     <TouchableOpacity style={styles.securityIcon} onPress={() => setHidePass(!hidePass)}>
                         {hidePass ? (
-                            <Eye color={colors('white')} size={20} />
+                            <Eye color={colors('branco')} size={20} />
                         ) : (
-                            <EyeSlash color={colors('white')} size={20} />
+                            <EyeSlash color={colors('branco')} size={20} />
                         )}
                     </TouchableOpacity>
                 )}
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
         width: '100%',
         height: 40,
         borderBottomWidth: 1,
-        borderColor: colors("primary"),
+        //borderColor: colors(""),
         padding: 4,
         marginBottom: 20,
         alignItems: 'center'
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
         width: '80%',
         fontSize: 16,
         paddingHorizontal: 10,
-        color: colors("white"),
+        color: colors("branco"),
     },
     securityIcon: {
         width: '20%',

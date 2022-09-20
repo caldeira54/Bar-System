@@ -1,43 +1,44 @@
 import React from 'react';
 import { useNavigation } from '@react-navigation/native';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { ArrowLeft, SignOut } from 'phosphor-react-native';
 import colors from '../global/colors';
-import { ArrowFatLinesRight, ArrowLeft } from 'phosphor-react-native';
-import { TouchableOpacity } from 'react-native-web';
 
-export default function Header({ title, backButton = true }) {
+export default function Header({ title, backButton = true, exitButton = false }) {
     const navigation = useNavigation();
 
     return (
         <View style={styles.container}>
             <View style={styles.header}>
                 {backButton ? (
-                    <TouchableOpacity onPress={() => navigation.goBack()}>
-                        <ArrowLeft size={30} color={colors('white')} />
+                    <TouchableOpacity onPress={() => navigation.navigate('signin')}>
+                        <ArrowLeft size={30} color={colors('branco')} />
                     </TouchableOpacity>
-                ) : <View/>}
-                    <Text style={styles.title}>{title}</Text>
+                ) : <View />}
+                <Text style={styles.title}>{title}</Text>
+                {exitButton ? (
                     <TouchableOpacity onPress={() => navigation.goBack()}>
-                        <ArrowFatLinesRight size={30} color={colors('verdeclaro')} />
+                        <SignOut size={28} color={colors('verdeclaro')} />
                     </TouchableOpacity>
-                </View>
+                ) : <View />}
+            </View>
         </View>
     );
 }
 
 const styles = StyleSheet.create({
-        container: {
+    container: {
         height: 80,
-        padding: 5, 
+        padding: 5,
+    },
+    header: {
+        top: 30,
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between',
     },
     title: {
         fontSize: 25,
         color: colors('branco')
-    },
-    header: {
-        top: 28,
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center'
     }
-});
+})
